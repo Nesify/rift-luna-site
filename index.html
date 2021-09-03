@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<!-- Mirrored from luna.jake.how/ by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 03 Sep 2021 22:04:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+<title>Home | Luna</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Luna private server for Fortnite" />
+<meta name="author" content="jake" />
+<meta name="robots" content="no" />
+
+<meta property="og:site_name" content="luna.jake.how">
+<meta property="og:title" content="Luna" />
+<meta property="og:description" content="Luna private server for Fortnite" />
+
+<script src="../www.google.com/recaptcha/api.js"></script>
+<script src="js/layout.js"></script>
+<script>
+            async function setupLayout() {
+                var cosmetics = await getCosmeticsById("");
+
+                if (cosmetics.length == 0) {
+                    setDefaultPfp("cid_558_athena_commando_f_rebirthdefaultc")
+                }
+                else
+                    setLayoutPfp(cosmetics[0])
+
+            }
+        </script>
+
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/fontawesome.css">
+<link rel="stylesheet" href="css/homepage.css" />
+</head>
+<body>
+<div id="particles-js" class="luna-bg"></div>
+
+<header id="navbar">
+
+<ul class="desktop-navbar">
+</ul>
+<ul class="minimized-navbar">
+</ul>
+<div class="account-panel">
+<a class="button" onclick="openModal('login-modal')">Log in</a>
+</div>
+</header>
+
+<div class="section">
+<div class="section-content">
+<div class="field" id="introduction">
+<h1>Luna</h1>
+<h3>The best private server that <del>nobody</del> some people know about.</h3>
+<a class="button" href="#" onclick="openModal('login-modal')">Log in</a>
+</div>
+</div>
+</div>
+
+<div class="modal minimized" id="login-modal">
+<div class="modal-window" id="login-modal-login" style="width: 400px">
+<div class="close-button" onclick="closeModal('login-modal')">
+<i class="fas fa-times"></i>
+</div>
+<div class="modal-header">
+<h1 class="modal-title">Welcome!</h1>
+<p class="modal-desc">Sign in with your Luna account.</p>
+</div>
+<form method="post">
+<div class="input-block">
+<input type="email" id="login-email" placeholder="Email" required data-val="true" data-val-email="The LoginInput.Email field is not a valid e-mail address." data-val-required="The LoginInput.Email field is required." name="LoginInput.Email" value="">
+<span class="label">Email</span>
+</div>
+<div class="input-block">
+<input type="password" id="login-password" placeholder="Password" required data-val="true" data-val-required="The LoginInput.Password field is required." name="LoginInput.Password">
+<span class="label">Password</span>
+</div>
+<div class="modal-buttons">
+&nbsp;
+<input value="Login" type="submit" class="button" />
+</div>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8Dp9hBAnpIhMvuK8OoDU6Y7KIEmOMo3oRN1aDDwWF1JMl6_6jbSX7hXZehezaVuxWxFVrSco7wVroIPO2mQY_Xz6nmPLUWtpwOwuaM1JqC9Ffz-4bn2K1nFY0XlgTAYu-5vBNGnVcK9QUXFlkydCiLY" /></form>
+<div class="modal-bottom">
+<p class="sign-up">Don't have an account? <a href="#" onclick="closeModal('login-modal'); openModal('signup-modal');">Sign up</a></p>
+</div>
+</div>
+</div>
+<div class="modal minimized" id="signup-modal">
+<div class="modal-window" id="login-modal-signup">
+<div class="close-button" onclick="closeModal('signup-modal')">
+<i class="fas fa-times"></i>
+</div>
+<div class="modal-header">
+<h1 class="modal-title">Create an account</h1>
+<p class="modal-desc">Make sure your password is strong in order to protect your account.</p>
+</div>
+<form method="post" id="signup-form">
+<div class="input-block">
+<input type="text" id="signup-username" placeholder="Username" data-val="true" data-val-required="The SignupInput.Username field is required." name="SignupInput.Username" value="">
+<span class="label">Username</span>
+</div>
+<div class="input-block">
+<input type="email" id="signup-email" placeholder="Email" data-val="true" data-val-email="The SignupInput.Email field is not a valid e-mail address." data-val-required="The SignupInput.Email field is required." name="SignupInput.Email" value="">
+<span class="label">Email</span>
+</div>
+<div class="input-block">
+<input minlength="6" type="password" id="signup-password" placeholder="Password" data-val="true" data-val-required="The SignupInput.Password field is required." name="SignupInput.Password">
+<span class="label">Password</span>
+</div>
+<div class="g-recaptcha" data-theme="dark" data-sitekey="6LeWwkIcAAAAAMCeDrA_YGcQTwuov4ci64Av8ENU"></div>
+<div class="modal-buttons">
+<a href="#" onclick="closeModal('signup-modal'); openModal('login-modal')">Sign in instead</a>
+<input type="submit" class="button" value="Sign up">
+</div>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8Dp9hBAnpIhMvuK8OoDU6Y7KIEmOMo3oRN1aDDwWF1JMl6_6jbSX7hXZehezaVuxWxFVrSco7wVroIPO2mQY_Xz6nmPLUWtpwOwuaM1JqC9Ffz-4bn2K1nFY0XlgTAYu-5vBNGnVcK9QUXFlkydCiLY" /></form>
+</div>
+</div>
+<noscript>
+			<div class="modal">
+				<div class="modal-left">
+					<h1 class="modal-title">Error</h1>
+					<p class="modal-desc">This site needs to use JavaScript to ensure the best user experience. Please turn on JavaScript and refresh the page.</p>
+				</div>
+				<div class="modal-right">
+				</div>
+			</div>
+		</noscript>
+
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/jquery.textfill.min.html"></script>
+<script src="js/modal.js"></script>
+<script src="js/accountpanel.js"></script>
+<script src="js/fortniteApi.js"></script>
+<script src="lib/particles.min.js"></script>
+<script>
+			window.onload = setupLayout();
+			
+			particlesJS.load('particles-js', '/particlesjs-config.json', function() {
+              console.log('callback - particles.js config loaded');
+            });
+		</script>
+</body>
+
+<!-- Mirrored from luna.jake.how/ by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 03 Sep 2021 22:04:31 GMT -->
+</html>

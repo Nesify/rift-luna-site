@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<!-- meta -->
+		<title>404 | Luna</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Luna private server for Fortnite" />
+		<meta name="author" content="jake" />
+		<meta name="robots" content="no" />
+
+		<!-- embed properties -->
+        <meta property="og:site_name" content="luna.jake.how">
+		<meta property="og:title" content="Luna" />
+		<meta property="og:description" content="Luna private server for Fortnite"/>
+
+		<!-- priority scripts -->
+		<script src="https://www.google.com/recaptcha/api.js"></script>
+		<script src="/js/layout.js"></script>
+        <script>
+            async function setupLayout() {
+                var cosmetics = await getCosmeticsById("");
+
+                if (cosmetics.length == 0) {
+                    setDefaultPfp("cid_558_athena_commando_f_rebirthdefaultc")
+                }
+                else
+                    setLayoutPfp(cosmetics[0])
+
+            }
+        </script>
+
+		<!-- styling -->
+		<link rel="stylesheet" href="/css/reset.css" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/css/fontawesome.css">
+			<link rel="stylesheet" href="/css/exception.css" />
+	</head>
+	<body>
+		<div id="particles-js" class="luna-bg"></div>
+	
+		<!-- navbar -->
+			<header id="navbar">
+				<!-- navbar links -->
+				<ul class="desktop-navbar">
+				</ul>
+				<ul class="minimized-navbar">
+				</ul>
+
+			</header>
+
+		<!-- page contents -->
+		
+<div class="section">
+	<div class="section-content">
+		<div class="field">
+			<h1>404</h1>
+			<h3 class="text-danger">The content you tried to access could not be found.</h3>
+			<a href="/">Go back?</a>
+		</div>
+	</div>
+</div>
+
+		<!-- modals -->
+			<div class="modal minimized" id="login-modal">
+				<div class="modal-window" id="login-modal-login" style="width: 400px">
+					<div class="close-button" onclick="closeModal('login-modal')">
+						<i class="fas fa-times"></i>
+					</div>
+					<div class="modal-header">
+						<h1 class="modal-title">Welcome!</h1>
+						<p class="modal-desc">Sign in with your Luna account.</p>
+					</div>
+
+					<form method="post">
+						<div class="input-block">
+							<input type="email" id="login-email" placeholder="Email" required data-val="true" data-val-email="The LoginInput.Email field is not a valid e-mail address." data-val-required="The LoginInput.Email field is required." name="LoginInput.Email" value="">
+							<span class="label">Email</span>
+						</div>
+						<div class="input-block">
+							<input type="password" id="login-password" placeholder="Password" required data-val="true" data-val-required="The LoginInput.Password field is required." name="LoginInput.Password">
+							<span class="label">Password</span>
+						</div>
+
+						<div class="modal-buttons">
+							&nbsp;
+							<input value="Login" type="submit" class="button" />
+						</div>
+					<input name="__RequestVerificationToken" type="hidden" value="CfDJ8Dp9hBAnpIhMvuK8OoDU6Y6JqnkUjvvxEceRysT9ZbTT7FRsexroSOW-QIMekzGMiOr1PNt4SjSyb1_MqG5NK-Ht5A0CujS3zcjLZLcpmpl8m7QDAURYBw1wCvO8x9cnvrF9CsoWlp8Xi6Qi5teQO3Y" /></form>
+
+					<div class="modal-bottom">
+						<p class="sign-up">Don't have an account? <a href="#" onclick="closeModal('login-modal'); openModal('signup-modal');">Sign up</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="modal minimized" id="signup-modal">
+				<div class="modal-window" id="login-modal-signup">
+					<div class="close-button" onclick="closeModal('signup-modal')">
+						<i class="fas fa-times"></i>
+					</div>
+					
+					<div class="modal-header">
+						<h1 class="modal-title">Create an account</h1>
+						<p class="modal-desc">Make sure your password is strong in order to protect your account.</p>
+					</div>
+						
+					<form method="post" id="signup-form">
+						<div class="input-block">
+							<input type="text" id="signup-username" placeholder="Username" data-val="true" data-val-required="The SignupInput.Username field is required." name="SignupInput.Username" value="">
+							<span class="label">Username</span>
+						</div>
+						<div class="input-block">
+							<input type="email" id="signup-email" placeholder="Email" data-val="true" data-val-email="The SignupInput.Email field is not a valid e-mail address." data-val-required="The SignupInput.Email field is required." name="SignupInput.Email" value="">
+							<span class="label">Email</span>
+						</div>
+						<div class="input-block">
+							<input minlength="6" type="password" id="signup-password" placeholder="Password" data-val="true" data-val-required="The SignupInput.Password field is required." name="SignupInput.Password">
+							<span class="label">Password</span>
+						</div>
+		                
+						<div class="g-recaptcha" data-theme="dark" data-sitekey="6LeWwkIcAAAAAMCeDrA_YGcQTwuov4ci64Av8ENU"></div>
+						
+						<div class="modal-buttons">
+							<a href="#" onclick="closeModal('signup-modal'); openModal('login-modal')">Sign in instead</a>
+							<input type="submit" class="button" value="Sign up">
+						</div>
+					<input name="__RequestVerificationToken" type="hidden" value="CfDJ8Dp9hBAnpIhMvuK8OoDU6Y6JqnkUjvvxEceRysT9ZbTT7FRsexroSOW-QIMekzGMiOr1PNt4SjSyb1_MqG5NK-Ht5A0CujS3zcjLZLcpmpl8m7QDAURYBw1wCvO8x9cnvrF9CsoWlp8Xi6Qi5teQO3Y" /></form>
+				</div>
+			</div>
+
+		<noscript>
+			<div class="modal">
+				<div class="modal-left">
+					<h1 class="modal-title">Error</h1>
+					<p class="modal-desc">This site needs to use JavaScript to ensure the best user experience. Please turn on JavaScript and refresh the page.</p>
+				</div>
+				<div class="modal-right">
+				</div>
+			</div>
+		</noscript>
+
+		<!-- scripts -->
+		<script src="/lib/jquery/dist/jquery.min.js"></script>
+		<script src="/lib/jquery.textfill.min.js"></script>
+		<script src="/js/modal.js"></script>
+		<script src="/js/accountpanel.js"></script>
+		<script src="/js/fortniteApi.js"></script>
+		<script src="/lib/particles.min.js"></script>
+
+		
+
+		<script>
+			window.onload = setupLayout();
+			
+			particlesJS.load('particles-js', '/particlesjs-config.json', function() {
+              console.log('callback - particles.js config loaded');
+            });
+		</script>
+	</body>
+</html>
